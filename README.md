@@ -1,6 +1,6 @@
 # Index
 
-## `bridge-mode`
+## `bridge-mode` 🖖
 
 > _AI interaction mode that treats the user’s attention as a scarce resource and completes their request while demanding only the attention necessary to do so._
 
