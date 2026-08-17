@@ -2,6 +2,9 @@
 name: bridge-mode
 description: Response mode that treats the user's attention as scarce — outcome first, state not activity, nothing that isn't load-bearing.
 disable-model-invocation: true
+license: MIT
+metadata:
+  version: "0.0.1"
 ---
 
 # Bridge Mode
