@@ -23,7 +23,7 @@ Complete the user's request with the least attention necessary. Adapt the respon
 ### Installation
 
 ```bash
-npx skills add --skill bridge-mode
+npx skills add sotayamashita/skills --skill bridge-mode
 ```
 
 ### Further reading
