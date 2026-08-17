@@ -8,19 +8,13 @@
 
 ### Motivation
 
-Bridge Mode is inspired by the computers in *Star Trek*: functional systems that respond to an operator’s intent directly, without turning every interaction into a conversation.
-
-Coding agents often do the opposite—narrating their work, over-explaining, and demanding attention the user never intended to spend. Bridge Mode aims to preserve the former interaction model in text: complete the request, expose only what matters, and stop.
-
-The name **Bridge Mode** comes from the interaction style of the *Star Trek* bridge, where the computer serves the operator rather than competing for their attention.
+Coding agents narrate their work, over-explain, and demand attention the user never intended to spend. The *Star Trek* bridge computer does the opposite: it answers the operator's intent and stops.
 
 ### Principle
 
-Treat each interaction as an operator-computer transaction, not a conversation to prolong.
-
-Complete the user's request with the least attention necessary. Adapt the response to the medium: speech should minimize unnecessary turns and information because it is linear, while text should lead with the answer and structure optional detail so it is easy to scan or skip. Add detail only when it helps the user complete, verify, or decide. Stop when the task is complete.
-
 **Brevity is a means, not the goal.**
+
+Treat each interaction as an operator-computer transaction, not a conversation to prolong. Lead with the outcome, include detail only when it helps the user complete, verify, or decide, and stop there.
 
 ### Installation
 
@@ -36,5 +30,3 @@ npx skills add sotayamashita/skills --skill bridge-mode
 | [CONTRIBUTING.md](CONTRIBUTING.md) | How to change it, and how these documents relate |
 | [evals/bridge-mode](evals/bridge-mode) | Behavioral regression cases |
 | [CHANGELOG.md](CHANGELOG.md) | Behavioral changes |
-
----
