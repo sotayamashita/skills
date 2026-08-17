@@ -26,11 +26,13 @@ Complete the user's request with the least attention necessary. Adapt the respon
 npx skills add --skill bridge-mode
 ```
 
-### References
+### Further reading
 
-- [Tea, Earl Grey, Hot: Designing Speech Interactions from the Imagined Ideal of Star Trek](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445640)
-- [github.com/ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd/tree/main/skills/i-have-adhd)
-- [github.com/alexgreensh/attention-span](https://github.com/alexgreensh/attention-span/tree/main)
-- [github.com/humanlayer/skills/show-me](https://github.com/humanlayer/skills/tree/main/plugins/show-me/skills/show-me)
+| | |
+| --- | --- |
+| [DESIGN.md](DESIGN.md) | Why the skill is shaped this way, prior art, and what was not adopted |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to change it, and how these documents relate |
+| [evals/bridge-mode](evals/bridge-mode) | Behavioral regression cases |
+| [CHANGELOG.md](CHANGELOG.md) | Behavioral changes |
 
 ---
