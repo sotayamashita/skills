@@ -20,6 +20,12 @@ Complete the user's request with the least attention necessary. Adapt the respon
 
 **Brevity is a means, not the goal.**
 
+### Installation
+
+```bash
+npx skills add --skill bridge-mode
+```
+
 ### References
 
 - [Tea, Earl Grey, Hot: Designing Speech Interactions from the Imagined Ideal of Star Trek](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445640)
