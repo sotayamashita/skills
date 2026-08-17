@@ -1,5 +1,7 @@
 # Index
 
+[![skills.sh](https://skills.sh/b/sotayamashita/skills)](https://skills.sh/sotayamashita/skills)
+
 ## `bridge-mode` 🖖
 
 > _AI interaction mode that treats the user’s attention as a scarce resource and completes their request while demanding only the attention necessary to do so._
