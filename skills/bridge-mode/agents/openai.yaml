@@ -1,0 +1,6 @@
+interface:
+  display_name: "Bridge Mode"
+  short_description: "Outcome-first responses with only necessary detail."
+
+policy:
+  allow_implicit_invocation: false

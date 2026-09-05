@@ -1,0 +1,20 @@
+{
+  "name": "sotayamashita-skills",
+  "interface": {
+    "displayName": "Sam Yamashita's Skills"
+  },
+  "plugins": [
+    {
+      "name": "bridge-mode",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

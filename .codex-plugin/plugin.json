@@ -1,0 +1,20 @@
+{
+  "name": "bridge-mode",
+  "version": "0.0.2",
+  "description": "Outcome-first responses with only the detail the task needs.",
+  "author": {
+    "name": "Sam Yamashita"
+  },
+  "repository": "https://github.com/sotayamashita/skills",
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Bridge Mode",
+    "shortDescription": "Outcome-first responses with only necessary detail.",
+    "longDescription": "Lead with the answer or result, then include the evidence, conditions, and uncertainty the task needs.",
+    "developerName": "Sam Yamashita",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": ["Turn bridge-mode on."]
+  }
+}

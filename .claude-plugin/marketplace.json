@@ -1,0 +1,15 @@
+{
+  "name": "sotayamashita-skills",
+  "metadata": {
+    "description": "Bridge Mode for outcome-first responses."
+  },
+  "owner": {
+    "name": "Sam Yamashita"
+  },
+  "plugins": [
+    {
+      "name": "bridge-mode",
+      "source": "./"
+    }
+  ]
+}

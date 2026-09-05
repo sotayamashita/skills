@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "bridge-mode",
+  "version": "0.0.2",
+  "description": "Outcome-first responses with only the detail the task needs.",
+  "author": {
+    "name": "Sam Yamashita"
+  },
+  "repository": "https://github.com/sotayamashita/skills",
+  "license": "MIT"
+}

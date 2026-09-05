@@ -100,9 +100,28 @@ Two files sit outside the layers. `CONTRIBUTING.md` — this file — fixes the
 order changes are made in. `CHANGELOG.md` records what changed behaviorally,
 for someone whose results shifted between versions.
 
-`skills/<skill>/` is the distribution unit fetched by `npx skills add`. Design
-documents, evals, and history stay at the repository root so that installing a
-skill does not ship them into every user's context.
+The repository root is the plugin package. `plugin.json` defines its portable
+identity. `.codex-plugin/plugin.json` and `.claude-plugin/plugin.json` provide
+client compatibility. Their catalogs are `.agents/plugins/marketplace.json`
+and `.claude-plugin/marketplace.json`, respectively. All manifests use the same
+`skills/` directory. Keep their shared metadata in sync.
+
+`skills/<skill>/` remains the distribution unit for the skill-only fallback.
+Design documents, evals, and history are maintainer documentation, not runtime
+instructions. Package references must resolve inside the repository.
+
+For packaging changes, validate all manifests, check each catalog's plugin
+name and source path, and confirm that skill references remain inside the
+package. Test installation and ON/OFF behavior in a fresh client conversation
+before claiming client compatibility or removing the fallback. Packaging-only
+changes do not require behavioral eval changes.
+
+Validate the Claude Code package from the repository root:
+
+```bash
+claude plugin validate .claude-plugin/plugin.json
+claude plugin validate .claude-plugin/marketplace.json
+```
 
 DESIGN.md holds one `##` section per skill. Split it into `design/<skill>.md`
 when the third skill is added, not before.
