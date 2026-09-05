@@ -20,47 +20,23 @@ brevity follows from removing what does not help.
 
 ### Install
 
-This repository is an [Agent Plugin](https://agent-plugins.org/plugin-authors/build-an-agent-plugin).
-Installation depends on your client; the portable format does not define an
-install command.
-
-#### Claude Code
-
-Start Claude Code in a local checkout containing the plugin manifests, then run:
-
-```text
-/plugin marketplace add .
-/plugin install bridge-mode@sotayamashita-skills
-```
-
-Follow the install prompt, then start a new conversation. Invoke
-`/bridge-mode:bridge-mode` and send `bridge-mode on`. Send `bridge-mode off`
-to stop it. The skill retains `disable-model-invocation: true` so Claude Code
-does not invoke it automatically.
-
-Avoid loading both a standalone copy and the plugin copy in the same client.
-Installation and conversational behavior have not been tested end to end.
-
 #### Codex
 
-Compatibility is pending: the Codex plugin validator rejects the skill's
-existing `disable-model-invocation: true` setting. It is retained for Claude
-Code. Codex's `agents/openai.yaml` separately sets
-`allow_implicit_invocation: false` for explicit activation; this does not resolve
-the plugin validation failure. The commands below have not been installation-tested.
-
-From a local checkout containing the plugin manifests:
+Run in your terminal:
 
 ```bash
-codex plugin marketplace add .
+codex plugin marketplace add sotayamashita/skills
 codex plugin add bridge-mode@sotayamashita-skills
 ```
 
-Start a new conversation, invoke the installed `bridge-mode` skill, and send
-`bridge-mode on`. Send `bridge-mode off` to stop it. Installing the plugin does
-not configure automatic activation in every conversation.
+#### Claude Code
 
-Avoid loading both a standalone copy and the plugin copy in the same client.
+Run in Claude Code:
+
+```text
+/plugin marketplace add sotayamashita/skills
+/plugin install bridge-mode@sotayamashita-skills
+```
 
 #### Skill-only fallback
 
