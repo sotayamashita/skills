@@ -13,7 +13,7 @@ many.
 | File | Covers |
 | --- | --- |
 | [question.md](question.md) | The user asked a question |
-| [command.md](command.md) | The user asked for work to be done |
+| [command.md](command.md) | Work requests and conversation-scoped ON/OFF controls |
 | [decision.md](decision.md) | The user asked which option to take |
 | [explanation.md](explanation.md) | The user asked to be taught something |
 | [progress.md](progress.md) | Communication during a long task |

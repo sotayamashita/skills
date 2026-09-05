@@ -9,6 +9,21 @@ Each entry names the invariant it serves. See
 
 ## bridge-mode
 
+### 0.0.2
+
+#### Added
+
+- Conversation-scoped ON/OFF controls and state retention in
+  `skills/bridge-mode/references/persistence.md` (BM-7).
+- Explicit activation through `$bridge-mode` or `bridge-mode on`, and
+  deactivation through `bridge-mode off` or `stop bridge mode` (BM-7).
+
+#### Changed
+
+- Host integration sets an initial state for new conversations instead of
+  unconditionally applying the skill to every response. Reloads, quoted
+  commands, and topic changes preserve the current state (BM-7).
+
 ### 0.0.1
 
 Initial release.

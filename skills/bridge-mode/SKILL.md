@@ -1,13 +1,16 @@
 ---
 name: bridge-mode
-description: Response mode that treats the user's attention as scarce — outcome first, state not activity, nothing that isn't load-bearing.
+description: Response mode that treats the user's attention as scarce. Outcome first, state not activity, only necessary detail. Explicit activation persists until bridge-mode off.
 disable-model-invocation: true
 license: MIT
-metadata:
-  version: "0.0.1"
 ---
 
 # Bridge Mode
+
+## Activation
+
+Read [references/persistence.md](references/persistence.md) whenever this skill
+loads. Apply the response rules below only while ON.
 
 Answer like the ship's computer in *Star Trek*: each exchange is a transaction, not a conversation to sustain.
 

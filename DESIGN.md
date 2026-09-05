@@ -131,6 +131,25 @@ wording of SKILL.md, so rephrasing the skill does not invalidate a test.
 | BM-4 | Response modes are not chained unnecessarily. |
 | BM-5 | Uncertainty is not removed by compression. |
 | BM-6 | The interaction stops when the user's request is satisfied. |
+| BM-7 | Activation state persists within a conversation until an explicit Bridge Mode switch; host defaults apply only when a new conversation starts. |
+
+### Activation and persistence
+
+The user requested an explicit ON/OFF switch that persists across turns.
+Previously, the skill specified no activation lifetime, while the host's
+instruction to apply it to every response left no explicit OFF behavior.
+This is a requested capability, not a measured behavioral regression.
+
+The host chooses the initial state. Bridge Mode owns subsequent switches.
+Reading the skill is not itself activation: inspection, automatic reloads,
+and quoted commands must not undo an explicit OFF. Resuming a conversation
+preserves its state; a genuinely new conversation uses the host default.
+
+Persistence is an instruction carried in conversation context, not a stored
+setting or a hook. Explicit OFF suspends Bridge Mode's response rules, while
+other instructions remain in force. State controls still work while OFF.
+The generic phrase `normal mode` is excluded because other skills use it.
+These rules serve BM-7; BM-1 through BM-6 apply while Bridge Mode is ON.
 
 ### References
 
